@@ -1,0 +1,20 @@
+program arru;
+{$APPTYPE CONSOLE}
+
+var
+     A,B : array[0..3] of integer;
+     i: integer;
+begin
+         A[0]:= 1;
+         A[1]:= 5;
+         A[2]:= 6;
+         B[3]:= -1;
+
+         for i := 0 to 100 do begin
+             //A[i]:= random(100);
+             write(A[i],' ');
+         end;
+writeln;
+readln;
+
+end.

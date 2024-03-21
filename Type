@@ -1,0 +1,29 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+     var
+              i,j : integer;
+              A, B : Single;
+              D: Extended;
+              type meh = array[1..8] of integer;
+              var bruh : ^meh;
+begin
+          i := 5;
+          D := 5.1;
+          writeln('Sizeof(bruh) = ' , Sizeof(bruh^));
+          write('Size of Single: ');
+          writeln(sizeof(B));
+          writeln('Size of Extended:', sizeof(D));
+          writeln('Size of Integer: ', sizeof(j));
+          write('Enter i: ');
+          readln(i);
+          writeln(sizeof(i));
+
+
+
+          readln;
+end.

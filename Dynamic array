@@ -1,0 +1,31 @@
+program array_test;
+{$APPTYPE CONSOLE}
+	
+var
+	A : array of integer;
+	i, N : integer;
+
+begin
+  write('N = ');
+  readln(N);
+  setlength(A,N);
+  for i := 0 to high(A) do begin
+    A[i] := random(30);
+    if A[i] < 20 then begin
+      writeln(i,': Nuhnuh',' ',A[i])
+    end  else begin
+    writeln('Uh');
+
+    end;
+
+  end;
+  writeln;
+
+	i := 200;
+	while 18 > i  do begin
+		i := i + 1;
+		writeln(i);
+	end;
+  readln;
+
+end.

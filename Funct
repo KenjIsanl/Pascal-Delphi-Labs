@@ -1,0 +1,22 @@
+program funct;
+{$APPTYPE CONSOLE}
+
+// These functions return True/False
+// and print messages while executing.
+var
+   Name: string;
+   i,j: integer;
+function ALCHNO(arg:integer): integer;
+begin
+  writeln('ALCHNO: ');
+  ALCHNO:= arg < 18;
+end;
+begin
+write('Name: ');
+readln(Name);
+i:= 17;
+writeln(ALCHNO(i),' No you are little bastard!');
+readln;
+
+
+end.

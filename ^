@@ -1,0 +1,14 @@
+program prt_demo;
+{$APPTYPE CONSOLE}
+
+uses
+    SysUtils;
+
+var
+     p_in: ^integer;
+     begin
+        p_in^ :=15;
+        {if i write new(p_in) in value i receive 0 and other value in adress}
+        writeln(format('Adress: %p Value: %u',[p_in,p_in^]));
+        readln;
+     end.
